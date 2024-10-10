@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACES Event Registration</title>
+    <link rel="stylesheet" href="./style .css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>ACES Event Registration</h1>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Your department (e.g., Computer Science)" required>
+
+        <label for="year">Year of Studying:</label>
+        <select id="year" name="year" required>
+            <option value="" disabled selected>Select your year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </select>
+
+        <label for="event">Event Interested In:</label>
+        <textarea id="event" name="event" rows="4" placeholder="Mention the event you are interested in" required></textarea>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Any additional information you'd like to provide"></textarea>
+
+        <button type="submit">Submit</button>
+        <div id="message"></div>
+    </form>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
